@@ -1,2 +1,3 @@
-export {ScreenCadastrar as ScreenCadastrar} from './Cadastrar'
-export {ScreenListar as ScreenTelaListar} from './Listar'
+export {Mensagem as ScreenMensagem} from './Mensagem'
+export {CadMensagem as ScreenCadMensagem} from './CadMensagem'
+export {Inicial as ScreenInicial} from './Inicial'
