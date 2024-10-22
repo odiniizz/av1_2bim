@@ -13,12 +13,20 @@ export interface IResponseMessage {
     created_at: string
 }
 
+export interface IError {
+    errors: {
+        rule: string
+        field: string
+        message: string
+    }[]
+}
+
 class MessageData {
     index() {
         return api.get<IResponseMessage[]>('/message')
     }
     store(data: IMessage) {
-        return api.post("/message", data)
+        return api.post('/message', data)
     }
 }
 

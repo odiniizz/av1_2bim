@@ -8,6 +8,7 @@ import { MaterialIcons, Entypo } from "@expo/vector-icons";
 import { ButtonInterface } from "../../components/ButtonInterface";
 import { AxiosError } from "axios";
 import { IMessage } from "../../services/data/Message";
+import { IError } from "../../services/data/Message";
 import { apiMessage } from "../../services/data";
 
 export function CadMensagem({ navigation }: MenuStackTypes) {
@@ -22,8 +23,8 @@ export function CadMensagem({ navigation }: MenuStackTypes) {
                 navigation.navigate("Mensagem")
             } catch (error) {
                 const err = error as AxiosError
-                const msg = err.response?.data as string
-                Alert.alert(msg)
+                const msg = (err.response?.data as IError)
+                Alert.alert(msg.errors.reduce((total, atual) => total + atual.message, ''))
                 console.log(err)
             }
         } else {
