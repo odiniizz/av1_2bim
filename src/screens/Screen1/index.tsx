@@ -2,7 +2,7 @@ import React from "react";
 import { View, Text } from "react-native";
 import { Painel } from "./styles";
 
-export function Inicial () {
+export function Screen1 () {
     return (
         <View style={Painel.container}>
             <Text>1. BOTE O QUE QUISER AQUI, CASO QUEIRA MUDAR O ICONE DO MENU, VÁ EM "MenuBottomTabs" E MUDE ONDE ESTA COMENTADO</Text>

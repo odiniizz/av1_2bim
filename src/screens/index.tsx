@@ -1,3 +1,3 @@
-export {Mensagem as ScreenMensagem} from './Mensagem'
-export {CadMensagem as ScreenCadMensagem} from './CadMensagem'
-export {Inicial as ScreenInicial} from './Inicial'
+export {Mensagem as ScreenMensagem} from "./Mensagem"
+export { CadMensagem as ScreenCadastroMensagem } from "./CadMensagem"
+export { Screen1 as Screen1 } from "./Screen1"

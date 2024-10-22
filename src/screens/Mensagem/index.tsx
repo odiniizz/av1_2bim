@@ -5,7 +5,7 @@ import { IResponseMessage } from "../../services/data/Message";
 import { FlatList } from "react-native-gesture-handler";
 import { MenuStackTypes } from "../../navigation/MensagemStack"
 import { MaterialIcons} from "@expo/vector-icons";
-import { Painel } from "./style";
+import { Painel } from "./styles";
 
 export function Mensagem({ navigation }: MenuStackTypes) {
     const [message, setMessage] = useState<IResponseMessage[]>([])

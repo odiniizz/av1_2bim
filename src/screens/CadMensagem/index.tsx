@@ -1,7 +1,7 @@
 import { View, Text, TextInput, TouchableOpacity, Alert, KeyboardAvoidingView } from "react-native"
 import Navigation from "../../navigation"
 import { MenuStackTypes } from "../../navigation/MensagemStack"
-import { Painel } from './style';
+import { Painel } from './styles';
 import { useState } from "react";
 import React from "react";
 import { MaterialIcons, Entypo } from "@expo/vector-icons";
