@@ -38,7 +38,7 @@ export function CadMensagem({ navigation }: MenuStackTypes) {
 
     return (
         <View style={Painel.container}>
-            <Text style={Painel.titulo}>Cadastrar Mensagem</Text>
+            <Text style={Painel.titulo}>Cadastrar Cardápio</Text>
             <KeyboardAvoidingView>
                 <View style={Painel.campoTitulo}>
                     <TextInput  style={Painel.input}
